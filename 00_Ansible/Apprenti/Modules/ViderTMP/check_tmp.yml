@@ -1,0 +1,7 @@
+---
+#playbook de test 
+
+-name:"je test mon playbook de verification de /TMP"
+hosts:"localhost"
+tasks:
+    - folder_available: path=/TMP 
