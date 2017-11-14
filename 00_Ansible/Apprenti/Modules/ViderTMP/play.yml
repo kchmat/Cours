@@ -1,0 +1,10 @@
+---
+#playbook de test
+#test module file
+
+- name: test file couppppppu# Auteur AMINE ELOUALID ELALAOUI#
+  hosts: localhost
+  tasks:
+   - name: teeeeeeeeeeeeeeeeeeeeeeest my modyleeeeeeeeeeeeeeeee
+     folder_available:
+       path: /TMP
