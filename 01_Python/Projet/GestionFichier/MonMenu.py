@@ -9,6 +9,7 @@ def PrintMenu():
     print("2\ I pour effacer l'ecran");
     print("3\ A pour ecrire dans un fichier /tmp/aminmodule.txt");
     print("4\ Q pour quitter le programme");
+    print("5\ L pour lister les packages installer sur ce serveur")
 
 
 #definition de la fonction qui crée un fichier
@@ -20,6 +21,11 @@ def EcrireFichier(monchemin="default.txt" ):
 
 def changerdir(path='/tmp/'):
     os.chdir("{0}".format(path))
+
+
+def ListerPack():
+    os.system('yum list installed')
+
 
 
 today =datetime.date.today();
@@ -36,7 +42,12 @@ while b==True:
     elif a=="E":
         e=raw_input("please entrer le nom de fichier a créer:")
         changerdir();
-        EcrireFichier(a)
+        EcrireFichier(e);
+        PrintMenu();
+    elif a=="L":
+        ListerPack();
+        PrintMenu();
     else:
         PrintMenu()
 print("c'est bon c'est plus dans le menu des commande");
+
