@@ -1,4 +1,26 @@
 #!/etc/bin/python
+# Documentation
+DOCUMENTATION = '''
+---
+version_added: "0.1"
+module: folder_available
+short_description: folder_available
+description:
+  - This module check if there's the TMP floder  available
+options:
+  path:
+    description:
+      path to check
+
+notes:
+requirements: []
+author: AEE
+'''
+EXAMPLES = '''
+- name: "folder available /TMP"
+  folder_available: path=/TMP
+'''
+
 from ansible.module_utils.basic import *
 
 
@@ -15,3 +37,7 @@ def main():
 
 if __name__ == '__main__':  
     main()
+
+    
+# on utilise le module ansible par :
+- module_name: parameters
