@@ -22,10 +22,11 @@ def main():
 
     if not os.path.exists(path):
         os.system("mkdir {0}".format(path))
-        os.system(" {0} >> /{1}/{2}".format(cont, path, emplacement))
+        os.system(" echo {0} >> /{1}/{2}".format(cont, path, emplacement))
         module.exit_json(changed=True, msg=path+"est cree")
     elif os.path.exists(path):
-        os.system(" {0} le dossier existe >> /{1}/{2}".format(cont, path, emplacement))
+        os.system(" echo ({0} 'dsdffddf') >> /{1}/{2}".format(cont, path, emplacement))
+        module.exit_json(changed=True, msg=path+"est cree")
     else:
         module.fail_json(msg=path+" exists")
 
