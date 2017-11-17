@@ -1,0 +1,12 @@
+---
+#playbook de test
+#test module file
+
+- name: test module Numero1# Auteur AMINE ELOUALID ELALAOUI#
+  hosts: localhost
+  tasks:
+   - name: Lancement de mon mOD1
+     mod1:
+       path: /TMP
+       cont: "AMine eloualid elalaoui"
+       emplacement: "mod1.txt"
