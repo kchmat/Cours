@@ -17,4 +17,8 @@ $test=@()  #tableau
 $test=@{} # hash table 
 $mavariable | get-member
 $mahash=@{"voila"=13;"koora"=34}  # mahash
+
+
+get-help get-command -detail
+get-help get-command -full
 ====================================================================================
