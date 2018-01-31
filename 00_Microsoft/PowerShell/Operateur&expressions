@@ -23,7 +23,20 @@
 -ge
 -lt
 -le
-==========================Operateur Arithmétiques===========================
+==========================Operateur de traitement de text===========================
+
+-like  -clike   -ilike
+-notlike  -cnotlike  -inotlike
+-match  -cmatch     -imatch
+-notmatch   -cnotmatch    -inotmatch
+
+-replace
+-join
+-split
+
+-contains
+-Notcontains
+
 ==========================Operateur Arithmétiques===========================
 ==========================Operateur Arithmétiques===========================
 
