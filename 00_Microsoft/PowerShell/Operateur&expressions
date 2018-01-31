@@ -17,7 +17,7 @@
 
 
 ==========================Operateurs de comparaison ===========================
--eq
+-eq, ceq   # "bonjour" -eq "Bonjour" ==> true
 -ne
 -gt
 -ge
