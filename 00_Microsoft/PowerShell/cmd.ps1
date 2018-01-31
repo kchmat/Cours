@@ -12,5 +12,9 @@ get-member (gm)
 casting de variable
 $re=[String]$re
 $re=[int]$re
-
+$tabl= "bonjour","bonsoir"
+$test=@()  #tableau 
+$test=@{} # hash table 
+$mavariable | get-member
+$mahash=@{"voila"=13;"koora"=34}  # mahash
 ====================================================================================
