@@ -37,7 +37,11 @@
 -contains
 -Notcontains
 
-==========================Operateur Arithmétiques===========================
+==========================Operateur logique===========================
+-and  -band
+-or    -bor
+-not    -bnot
+-xor    -bxor
 ==========================Operateur Arithmétiques===========================
 
 
